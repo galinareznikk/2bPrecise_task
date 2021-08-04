@@ -1,0 +1,22 @@
+<div class="container">
+<h3 class="d-flex justify-content-center">Employee List</h3>
+<table class="table table-striped">
+
+<tr *ngFor="let dataItem of employeeList">
+    <td>{{dataItem.first_name}}</td>
+    <td>{{dataItem.last_name}}</td>
+    <td></td>
+    <td></td>
+    <td>{{dataItem.position}}</td> 
+    <td>
+        <button (click)="goToPage('ShowEmployee')">
+            View
+        </button>
+    </td>
+
+</tr> 
+</table>
+</div>
+
+<router-outlet></router-outlet>
+

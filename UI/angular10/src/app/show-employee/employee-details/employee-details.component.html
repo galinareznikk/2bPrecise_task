@@ -1,0 +1,18 @@
+<div class="container">
+
+    <h5>Name:  {{employeeData[0].first_name}}   {{employeeData[0].last_name}} </h5>
+
+    <h5>Manger:  </h5>
+</div>
+
+
+
+
+
+<table class="table table-striped">
+    <tr *ngFor="let dataItem of managerData">
+        <td>{{dataItem.first_name}}</td>
+        <td>{{dataItem.last_name}}</td>
+
+    </tr>
+</table> 
